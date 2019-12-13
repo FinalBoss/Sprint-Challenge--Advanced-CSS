@@ -1,1 +1,55 @@
 // Mixins Here
+
+.desktopFlow(@adjustP, @adjustPL, @adjustPR, @adjustM, @adjustMT) {
+
+    display: flex;
+    
+    padding: @adjustP;
+    padding-left: @adjustPL;
+    padding-right: @adjustPR;
+    margin: @adjustM;
+    margin-top: @adjustMT;
+
+
+}
+
+
+
+
+.fontkitchen(@fam, @colorfam){
+
+    
+    font-family: @fam;
+    color: @colorfam;
+
+  }
+
+  .signup(@btncolor, @btnbg) {
+
+    background-color: @btnbg;
+    margin-left: 5px;
+    margin-right: 200px;
+    padding: 10px;
+    color: @btncolor;
+    cursor: pointer;
+    text-align: center;
+
+    &:hover{
+
+        background-color: lighten(@btnbg, 5%);
+
+
+    }
+
+    @media @phone{
+
+        margin-left: 0;
+         margin-right: 0;
+        padding: 20px;
+    }
+    
+
+  }
+
+
+ 
